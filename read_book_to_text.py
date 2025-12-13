@@ -2,7 +2,7 @@
 """
 สคริปต์สำหรับอ่านภาพและไฟล์ text จากโฟลเดอร์ Book
 รักษาความแม่นยำ 100% รวมถึงตัวเลข เครื่องหมาย และการจัดย่อหน้า
-บันทึกผลลัพธ์ลง output.txt
+บันทึกผลลัพธ์ลง raw-output.txt
 """
 
 import os
@@ -144,7 +144,7 @@ def main():
     # กำหนดโฟลเดอร์
     script_dir = Path(__file__).parent
     book_folder = script_dir / "Book"
-    output_file = script_dir / "output.txt"
+    output_file = script_dir / "raw-output.txt"
     
     if not book_folder.exists():
         print(f"❌ ไม่พบโฟลเดอร์ Book ที่: {book_folder}")
@@ -208,7 +208,7 @@ def main():
         else:
             print(f"   ⚠️  ไม่พบเนื้อหาในไฟล์นี้")
     
-    # บันทึกลงไฟล์ output.txt
+    # บันทึกลงไฟล์ raw-output.txt
     if all_content:
         final_text = ''.join(all_content)
         
@@ -236,7 +236,7 @@ def main():
         print(f"   - จำนวนตัวอักษร: {total_chars:,} ตัวอักษร")
         print(f"   - จำนวนบรรทัด: {total_lines:,} บรรทัด")
         print("=" * 100)
-        print("\n✨ เสร็จสมบูรณ์! สามารถเปิดไฟล์ output.txt เพื่อดูผลลัพธ์ได้เลยครับ")
+        print("\n✨ เสร็จสมบูรณ์! สามารถเปิดไฟล์ raw-output.txt เพื่อดูผลลัพธ์ได้เลยครับ")
     else:
         print("\n❌ ไม่มีเนื้อหาที่อ่านได้จากไฟล์ใดๆ")
 
