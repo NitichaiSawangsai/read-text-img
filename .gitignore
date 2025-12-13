@@ -42,9 +42,9 @@ sum.txt
 *.log
 
 # Image files (ถ้าไม่ต้องการอัพโหลดภาพ)
-# Book/*.png
-# Book/*.jpg
-# Book/*.jpeg
+Book/*.png
+Book/*.jpg
+Book/*.jpeg
 # *.png
 # *.jpg
 # *.jpeg
