@@ -16,7 +16,7 @@ pip3 install pillow pytesseract opencv-python numpy
 
 ## 🚀 วิธีใช้งาน
 
-### อ่านไฟล์จากโฟลเดอร์ Book
+### อ่านไฟล์จากโฟลเดอร์ Book (ใช้อันนี้)
 ```bash
 python3 read_book_to_text.py
 ```
